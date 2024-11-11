@@ -60,7 +60,7 @@ def setup_package():
 
           zip_safe=False,
 
-          keywords="urdu machine learning text pre-processing tensorflow nlp",
+         
 
           python_requires='>= 3.8',
 
@@ -84,13 +84,10 @@ def setup_package():
 
           project_urls={
              
-              "Source": "https://github.com/urduhack/urduhack",
-              "Bug Tracker": "https://github.com/urduhack/urduhack/issues"},
+              "Source": "https://github.com/ Kashmiri_normalizer/ kashmiri",
+              "Bug Tracker": "https://github.com/ Kashmiri_normalizer/ Kashmiri_normalizer/issues"},
 
-          entry_points="""
-            [console_scripts]
-            urduhack=urduhack.command.cli:cli
-        """
+          
 
           )
 
