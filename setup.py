@@ -1,5 +1,5 @@
 # coding: utf8
-"""Urduhack setup file"""
+
 from pathlib import Path
 
 from setuptools import setup, find_packages
