@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 def setup_package():
     """Packages setup functions with all required parameters"""
 
-    package_name = 'urduhack'
+    package_name = ' Kashmiri_normalizer'
     root = Path(__file__).parent.resolve()
 
     # Read in package meta from about.py
@@ -78,12 +78,12 @@ def setup_package():
               'Programming Language :: Python :: 3.9',
               'Topic :: Software Development :: Libraries',
               'Topic :: Software Development :: Libraries :: Python Modules',
-              "Natural Language :: Urdu",
+              "Natural Language :: Kashmiri",
               "Topic :: Text Processing :: Linguistic",
           ],
 
           project_urls={
-              "Documentation": "https://urduhack.readthedocs.io/en/stable/",
+             
               "Source": "https://github.com/urduhack/urduhack",
               "Bug Tracker": "https://github.com/urduhack/urduhack/issues"},
 
