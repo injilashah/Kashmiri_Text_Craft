@@ -4,7 +4,7 @@
 shahinjila435@gmail.com
 
 
-The Project **Kashmiri Text Craft** is  designed to *Preprocess* and *"Normalize"* Kashmiri text to make it more standardized and easier to work with in various applications, such as natural language processing (NLP), machine learning, and text analysis. 
+The Project **Kashmiri Text Craft** is  designed to *"Preprocess"* and *"Normalize"* Kashmiri text to make it more standardized and easier to work with in various applications, such as natural language processing (NLP), machine learning, and text analysis. 
 
 
 
