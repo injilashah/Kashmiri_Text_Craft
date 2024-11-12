@@ -4,13 +4,13 @@ from typing import FrozenSet, Dict
 
 # Urdu Alphabets
 
-KASHMIRI_ALPHABETS: FrozenSet[str] = frozenset("ٲ ا آ ٳ  إ أ ب پ  ت  ٹ ٹھ ث ٮ۪ "
-                                           "ج چ  ح خ "
-                                           " د ڈ ذ ډ ر ڑ ز ژ "
+KASHMIRI_ALPHABETS: FrozenSet[str] = frozenset("ٲ ا آ ٳ  إ أ ب پ ت ٹ ث"
+                                           "ج چ ح خ"
+                                           "د ڈ ذ ډ ر ڑ ز ژ"
                                            "س ش ص ض ط ظ ع غ "
-                                           "ف ق ک  گ ل م "
-                                           "ن ں و ؤ ۄ ۅ  ۆ ة ہ "
-                                           " ھ ء ی ؠ ۍ ے ".split())
+                                           "ف ق ک  گ ل م"
+                                           "ن ں و ؤ ۄ ۅ ۆ ة ہ "
+                                           "ھ ء ی ؠ ۍ ے".split())
 
 
 # KASHMIRI Digits from 0 to 9
@@ -121,11 +121,11 @@ KASHMIRI_ALL_CHARACTERS_UNICODE: Dict[str, str] = {
                                                ' ً' : '\u064B ',
                                                ' ّ' : '\u0651',
                                                ' ْ' : '\u0652 ',
-                                              '  ٜ' : '\u065C',
+                                               ' ٜ' : '\u065C',
                                                ' ٝ' : '\u065D ',
                                                ' ٟ' : '\u065F',
                                                ' ٰ' : '\u0670 ',
-                                               'ٴ ':  '\u0674 ',
+                                               'ٴ':  '\u0674 ',
                                                
                                                '۰': '\u06F0',
                                                '۱': '\u06F1',
