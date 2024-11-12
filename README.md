@@ -3,8 +3,10 @@
 
 shahinjila435@gmail.com
 
-<br>
-The Project Kashmiri Normalizer is  designed to "Process" and *"Normalize"* Kashmiri text to make it more standardized and easier to work with in various applications, such as natural language processing (NLP), machine learning, and text analysis. <br>
+
+The Project Kashmiri Normalizer is  designed to "Process" and *"Normalize"* Kashmiri text to make it more standardized and easier to work with in various applications, such as natural language processing (NLP), machine learning, and text analysis. 
+
+
 
 
 |    Feature    | Description                      |
@@ -31,8 +33,6 @@ git clone <https://github.com/injilashah/Kashmiri_normalizer.git>
 cd <C:\Users\...\...\Kashmiri_normalizer\kashmiri>
 python app.py
 ```
-
-
 
 ### Using the Application:
 Enter the Kashmiri text you want to normalize or preprocess.
