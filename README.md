@@ -27,7 +27,9 @@ Clone this   repo  and run the app:
 git clone <repository-url>
 cd <repository-directory>
 python app.py
-<br>
+```
+
+
 
 ###Using the Application:
 Enter the Kashmiri text you want to normalize or preprocess.
