@@ -24,8 +24,8 @@ The Project Kashmiri Normalizer is  designed to "Process" and *"Normalize"* Kash
 ###RUNNING THE APPLICATION 
 Clone this   repo  and run the app:
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone <https://github.com/injilashah/Kashmiri_normalizer.git>
+cd <C:\Users\...\...\Kashmiri_normalizer\kashmiri>
 python app.py
 ```
 
