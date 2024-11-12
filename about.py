@@ -14,7 +14,7 @@ __author_email__ = 'shahinjila435@gmail.com'  # Replace with your email
 def get_info() -> Dict[str, str]:
    
     return {
-        
+        "Kashmiri_normalizer_version": __version__,
         "location": str(Path(__file__).parent.parent),
         "platform": platform.platform(),
         "python_version": platform.python_version(), }
