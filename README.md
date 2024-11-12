@@ -1,5 +1,5 @@
 # Kashmiri_normalizer
-**Under Development**
+**Ongoing Development**
 
 shahinjila435@gmail.com
 
