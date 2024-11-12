@@ -1,10 +1,10 @@
 
 
-from typing import Dict, Lists
+from typing import Dict, List
 import logging
 
-from .regexes import _DIACRITICS_RE
-from .regexes import _SPACE_AFTER_PUNCTUATIONS_RE, _REMOVE_SPACE_BEFORE_PUNCTUATIONS_RE
+from regexes import _DIACRITICS_RE
+from regexes import _SPACE_AFTER_PUNCTUATIONS_RE, _REMOVE_SPACE_BEFORE_PUNCTUATIONS_RE
 
 logger = logging.getLogger(__name__)
 
@@ -12,9 +12,9 @@ logger = logging.getLogger(__name__)
 
 
 
-_CORRECT_Kashmiri_CHARACTERS_MAPPING: Dict[str, List[str]] = {  'آ': ['ﺁ', 'ﺂ'],
+_CORRECT_KASHMIRI_CHARACTERS_MAPPING: Dict[str, List[str]] = {  'آ': ['ﺁ', 'ﺂ'],
                                                           'أ': ['ﺃ'],
-                                                          '[ٲ]': 'ٲ,
+                                                          'ٲ':  ['ٲ'],
                                                           
                                                           'ا':['ﺍ',  'ﺎ' ],
                                                           'ب': ['ﺏ', 'ﺐ', 'ﺑ', 'ﺒ'],
@@ -75,7 +75,7 @@ _CORRECT_Kashmiri_CHARACTERS_MAPPING: Dict[str, List[str]] = {  'آ': ['ﺁ', '�
                                                           '٫': [],
                                                           '،': [],
                                                           
-                                                          '': ['ـ']
+                                                          '': ['ـ'],
                                                           'ۄ': ['ۄ'], 
                                                            
                                                           'ؤ': ['ؤ'],
@@ -86,10 +86,10 @@ _CORRECT_Kashmiri_CHARACTERS_MAPPING: Dict[str, List[str]] = {  'آ': ['ﺁ', '�
                                                           'ۍ': ['ۍ'],
                                                           'إ': ['إ'],
                                                           'ٳ': ['ٳ'],
-                                                          'ۈ': ['ۈ']
-                                                          'ۇ': ['ۇ']
-                                                          'ۉ': ['ۉ']
-                                                          'ێ': ['ێ']
+                                                          'ۈ': ['ۈ'],
+                                                          'ۇ': ['ۇ'],
+                                                          'ۉ': ['ۉ'],
+                                                          'ێ': ['ێ'],
                                                           'ڒ': ['ڒ'], 
                                                          
 
@@ -380,9 +380,9 @@ def punctuations_space(text: str) -> str:
     return text
 
 
-'''def remove_diacritics(text: str) -> str:
+def remove_diacritics(text: str) -> str:
     
-    return _DIACRITICS_RE.sub('', text)'''
+    return _DIACRITICS_RE.sub('', text)
 
 
 ENG_KASHMIRI_DIGITS_MAP: Dict = {
