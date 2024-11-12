@@ -1,6 +1,6 @@
 import regex as re
-
-from kashmiri.kashmiri_characters import KASHMIRI_PUNCTUATIONS, KASHMIRI_DIACRITICS
+import kashmiri_characters
+from kashmiri_characters import KASHMIRI_PUNCTUATIONS, KASHMIRI_DIACRITICS
 
 # Add spaces after ., if there is number then not Ex (9.00)
 _SPACE_AFTER_PUNCTUATIONS_RE = re.compile(

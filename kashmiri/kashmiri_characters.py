@@ -21,7 +21,7 @@ KASHMIRI_PUNCTUATIONS: FrozenSet[str] = frozenset("؛ ، ٫  ؟ ۔ ٪".split())
 
 
 #KASHMIRI_DIACRITICS: FrozenSet[str] = frozenset("\u064e \u064B \u0670 \u0650 \u064F \u064d".split())
-KASHMIRI_DIACRITICS :FrozenSet[str] = frozenset("\u064E \u064F \u064B \u064D   \u0650   \u0651 \u0652    \u0654  \u0655 \u0656  \u0657 \u065A \u065B \u065C \u065D  \u065F   \u0657   \u065A  \u0670 \u0674 ".split())
+KASHMIRI_DIACRITICS :FrozenSet[str] = frozenset("\u064E \u064F \u064B \u064D \u0650 \u0651 \u0652 \u0654 \u0655 \u0656 \u0657 \u065A \u065B \u065C \u065D \u065F \u0657 \u065A \u0670 \u0674 ".split())
 
 # KASHMIRI Extra Characters
 KASHMIRI_EXTRA_CHARACTERS: FrozenSet[str] = frozenset(" ؀ ؁ ؂ ؃ ؍ ؎  ؐ ؑ ؒ ؓ ؔ ؕ ٌ ّ ْ ٓ ٔ ٖ ٗ ٘ ٬ ".split())

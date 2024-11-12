@@ -3,8 +3,8 @@
 from typing import Dict, List
 import logging
 
-from regexes import _DIACRITICS_RE
-from regexes import _SPACE_AFTER_PUNCTUATIONS_RE, _REMOVE_SPACE_BEFORE_PUNCTUATIONS_RE
+from normalization.regexes import _DIACRITICS_RE
+from normalization.regexes import _SPACE_AFTER_PUNCTUATIONS_RE, _REMOVE_SPACE_BEFORE_PUNCTUATIONS_RE
 
 logger = logging.getLogger(__name__)
 
@@ -79,7 +79,7 @@ _CORRECT_KASHMIRI_CHARACTERS_MAPPING: Dict[str, List[str]] = {  'آ': ['ﺁ', '�
                                                           'ۄ': ['ۄ'], 
                                                            
                                                           'ؤ': ['ؤ'],
-                                                          'ؠ': ['ؠ','ـؠ','ـؠ'],
+                                                          'ؠ': ['ؠ'],
                                                           'ۅ': ['ۅ'],
                                                           'ۆ': ['ۆ'],
                                                           'ډ': ['ډ'],
