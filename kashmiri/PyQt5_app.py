@@ -78,6 +78,7 @@ class Kashmiri_Text_Craft_GUI(QtWidgets.QWidget):
         text = digits_space(text)
         text = english_characters_space(text)
         text = all_punctuations_space(text)
+        
         return text
 
 
