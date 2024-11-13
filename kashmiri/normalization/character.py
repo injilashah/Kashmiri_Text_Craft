@@ -8,10 +8,7 @@ from normalization.regexes import _SPACE_AFTER_PUNCTUATIONS_RE, _REMOVE_SPACE_BE
 
 logger = logging.getLogger(__name__)
 
-# Contains wrong Urdu characters mapping to correct characters
-
-
-
+# Contains wrong kashmiri characters mapping to correct characters
 _CORRECT_KASHMIRI_CHARACTERS_MAPPING: Dict[str, List[str]] = {  'آ': ['ﺁ', 'ﺂ'],
                                                           'أ': ['ﺃ'],
                                                           'ٲ':  ['ٲ'],
@@ -360,11 +357,6 @@ COMBINE_KASHMIRI_CHARACTERS: Dict[str, str] = {'ٮ۪': [ 'ؠـ', 'ٮ۪'],
 "ےٕ": "ےٕ",
                                            
                                            }
-
-
-# Issue to be resolved: Words like کیجئے and کیجیے appear in the same context but they have different unicodes.
-# We cannot merge them neither can we have them separately. Because if we decompose ئ,
-# we get unicode that are not available in our unicode list.
 
 def normalize_combine_characters(text: str) -> str:
  
