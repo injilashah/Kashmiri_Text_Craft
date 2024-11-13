@@ -1,0 +1,47 @@
+1>Removing diacritics: Removes ``kashmiri`` diacritics from text. It is an important step in pre-processing of the kashmiri data.
+       Examples:
+        >>> from normalization.character import remove_diacritics
+        >>> _text = "یعنی گۄڈٕ چیٖزُک ووٚن تہٕ اَدٕ تَمیُک ناو۔"
+        >>> normalized_text = remove_diacritics(_text)
+        >>> normalized_text ="یعنی گۄڈ چیزک وون تہ اد تمیک ناو ۔"
+
+2>Normalizing characters : Replacing ``kashmiri`` text characters with correct ``unicode`` characters.
+    Examples:
+        >>> from normalization.character import normalize_characters
+        >>> # Text containing characters from Arabic Unicode block
+        >>> _text = "یِہ چِھ اکھ خوبصوٗرت جاے یتھ منز ییتِہ واریاہ اصل مشک چُھ یوان ۔"
+        >>> normalized_text = normalize_characters(_text)
+        >>> # Normalized text - Arabic characters are now replaced with Kashmiri characters
+        >>> normalized_text ="یہ چھ اکھ خوبصورت جاے یتھ منز ییتہ واریاہ اصل مشک چھ یوان ۔"
+
+3>Normalizing combine characters : Replace combine|join ``kashmiri`` characters with single unicode character
+    Examples:
+        >>> from normalization.character import normalize_combine_characters
+        >>> # In the following string, Alif_mad ('ﺁ') and Hamza ('ٔھ') are separate characters
+        >>> _text = "ھآ"
+        >>> normalized_text = normalize_combine_characters(_text)
+        >>> # Now Alif_mad and Hamza are replaced by a Single Kashmiri Unicode Character!
+        >>> normalized_text = "ھآ""
+              
+4>>Adding Digits Space : adds spaces before|after numeric and Kashmiri digits
+    Examples:
+        >>> from preprocess.character import digits_space
+        >>> text = "3درجن"
+        >>> normalized_text = digits_space(text)
+        >>> normalized_text = 3 درجن 
+        
+5>Adjusting English character spaces : adds spaces before and after English words in the given kashmiri text.
+    Examples:
+        >>> from preprocessing.character import english_characters_space
+        >>> text = "کِتاب پرانKashmiriاوسstudentلائبریری منٛزاکھ"
+        >>> normalized_text = english_characters_space(text)
+        >>> normalized_text ="کِتا بپران Kashmiri اوس student لائبریری  منٛز   اکھ  "
+
+6>Adjusting all punctuation spaces : adds spaces after punctuations used in ``Kashmiri`` writing   
+    Examples :
+       >>>from preprocessing.character import all_punctuation_space
+       >>> text = "یُس أسۍ"اِستعمال"چھِ کَران!ـ"
+       >>> normalized_text = all_punctuation_space(text)
+       >>> normalized_text ="یُس أسۍ "اِستعمال" چھِ کَران ! ـ"
+
+
