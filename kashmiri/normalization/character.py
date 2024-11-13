@@ -443,6 +443,7 @@ def normalize(text: str) -> str:
     logger.info("Normalizing the text.")
 
     text = remove_diacritics(text)
+    
     text = normalize_characters(text)
     text = normalize_combine_characters(text)
     return text
