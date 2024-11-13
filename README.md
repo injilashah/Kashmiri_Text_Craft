@@ -40,6 +40,16 @@ Click "Normalize and Preprocess" to view normalized text.
 The  output will be displayed  in the designated text area.
 
 
+### Demo Image
+
+
+
+
+
+![Project Demo Image](kashmiri/demo.png)
+
+
+
 
 
 
