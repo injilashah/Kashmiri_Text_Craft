@@ -41,7 +41,10 @@ The  output will be displayed  in the designated text area.
 
 
 ###Demo 
-![Alt Text](kashmiri/demo.png)
+
+
+
+![Project Demo Image](kashmiri/demo.png)
 
 
 
