@@ -1,6 +1,3 @@
-# coding: utf8
-"""List of Regex for preprocess"""
-
 import string
 
 import regex as re
