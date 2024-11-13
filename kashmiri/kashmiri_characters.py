@@ -2,8 +2,7 @@
 
 from typing import FrozenSet, Dict
 
-# Urdu Alphabets
-
+#All kashmiri Alphabets
 KASHMIRI_ALPHABETS: FrozenSet[str] = frozenset("ٲ ا آ ٳ  إ أ ب پ ت ٹ ث"
                                            "ج چ ح خ"
                                            "د ڈ ذ ډ ر ڑ ز ژ"
