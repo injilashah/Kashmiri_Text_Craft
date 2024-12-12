@@ -1,6 +1,6 @@
 import regex as re
 import kashmiri_characters
-from kashmiri_characters import KASHMIRI_PUNCTUATIONS, KASHMIRI_DIACRITICS
+from kashmiri_characters import KASHMIRI_PUNCTUATIONS#, KASHMIRI_DIACRITICS
 
 
 _SPACE_AFTER_PUNCTUATIONS_RE = re.compile(
@@ -9,4 +9,4 @@ _SPACE_AFTER_PUNCTUATIONS_RE = re.compile(
 _REMOVE_SPACE_BEFORE_PUNCTUATIONS_RE = re.compile(r'\s+([' + "".join(KASHMIRI_PUNCTUATIONS) + '])',
                                                   flags=re.U | re.M | re.I)
 
-_DIACRITICS_RE = re.compile(f'[{"".join(KASHMIRI_DIACRITICS)}]', flags=re.U | re.M | re.I)
+#_DIACRITICS_RE = re.compile(f'[{"".join(KASHMIRI_DIACRITICS)}]', flags=re.U | re.M | re.I)
