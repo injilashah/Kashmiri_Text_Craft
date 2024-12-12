@@ -3,7 +3,7 @@
 from typing import Dict, List
 import logging
 
-from normalization.regexes import _DIACRITICS_RE
+#from normalization.regexes import _DIACRITICS_RE
 from normalization.regexes import _SPACE_AFTER_PUNCTUATIONS_RE, _REMOVE_SPACE_BEFORE_PUNCTUATIONS_RE
 
 logger = logging.getLogger(__name__)
@@ -372,9 +372,9 @@ def punctuations_space(text: str) -> str:
     return text
 
 
-def remove_diacritics(text: str) -> str:
+#def remove_diacritics(text: str) -> str:
     
-    return _DIACRITICS_RE.sub('', text)
+    #return _DIACRITICS_RE.sub('', text)
 
 
 ENG_KASHMIRI_DIGITS_MAP: Dict = {
@@ -434,7 +434,7 @@ def normalize(text: str) -> str:
 
     logger.info("Normalizing the text.")
 
-    text = remove_diacritics(text)
+    #text = remove_diacritics(text)
     
     text = normalize_characters(text)
     text = normalize_combine_characters(text)
