@@ -1,5 +1,5 @@
 
-
+import unicodedata
 from typing import Dict, List
 import logging
 
@@ -359,10 +359,32 @@ COMBINE_KASHMIRI_CHARACTERS: Dict[str, str] = {'ٮ۪': [ 'ؠـ', 'ٮ۪'],
                                            }
 
 def normalize_combine_characters(text: str) -> str:
+  
+
+  
+
+
+    # Step 1: Normalize to NFC
+    normalized_text = unicodedata.normalize('NFC', text)
+    
+    # Step 2: Combine diacritics with base characters
+    combined_text = []
+    for char in normalized_text:
+        if unicodedata.combining(char):
+            # Attach diacritic to the previous character
+            combined_text[-1] += char
+        else:
+            # Append base character
+            combined_text.append(char)
+    
+    return combined_text, "".join(combined_text)
+
+
+
+
+
  
-    for _key, _value in COMBINE_KASHMIRI_CHARACTERS.items():
-        text = text.replace(_key, _value)
-    return text
+    
 
 
 def punctuations_space(text: str) -> str:
