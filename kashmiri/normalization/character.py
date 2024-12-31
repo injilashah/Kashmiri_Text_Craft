@@ -358,12 +358,11 @@ COMBINE_KASHMIRI_CHARACTERS: Dict[str, str] = {'ٮ۪': [ 'ؠـ', 'ٮ۪'],
                                            
                                            }
 
+
 def normalize_combine_characters(text: str) -> str:
-  
-
-  
-
-
+    if not text:
+        return text  # Return early if the text is empty
+    
     # Step 1: Normalize to NFC
     normalized_text = unicodedata.normalize('NFC', text)
     
@@ -371,13 +370,19 @@ def normalize_combine_characters(text: str) -> str:
     combined_text = []
     for char in normalized_text:
         if unicodedata.combining(char):
-            # Attach diacritic to the previous character
-            combined_text[-1] += char
+            # Attach diacritic to the previous character only if the list is not empty
+            if combined_text:
+                combined_text[-1] += char
+            else:
+                # If there's no previous character, just append the diacritic (or handle as needed)
+                combined_text.append(char)
         else:
             # Append base character
             combined_text.append(char)
-    
-    return combined_text, "".join(combined_text)
+
+    # Return the combined text as a string
+    return "".join(combined_text)
+
 
 
 
