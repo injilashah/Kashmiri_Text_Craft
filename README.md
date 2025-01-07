@@ -1,7 +1,7 @@
 # Kashmiri_Text_Craft
 
 
-shahinjila435@gmail.com
+injilashah000@gmail.com
 
 
 The Project **Kashmiri Text Craft** is  designed for Basic Preprocessing of Kashmiri text to make it more standardized and easier to work with in various applications, such as natural language processing (NLP), machine learning, and text analysis. 
